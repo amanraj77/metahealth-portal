@@ -9,72 +9,73 @@ interface CombinedContract {
 }
 
 // Replace with your contract address and ABI
-const contractAddress = "0xd7Ca4e99F7C171B9ea2De80d3363c47009afaC5F";
+const contractAddress = "0xE5f2A565Ee0Aa9836B4c80a07C8b32aAd7978e22";
 const abi = [
-    {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "initialSupply",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "nonpayable",
-        "type": "constructor"
-    },
-    {
-        "inputs": [],
-        "name": "clinicalTrials",
-        "outputs": [
-            {
-                "internalType": "contract ClinicalTrials",
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "healthToken",
-        "outputs": [
-            {
-                "internalType": "contract HealthToken",
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "marketplace",
-        "outputs": [
-            {
-                "internalType": "contract Marketplace",
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "medicalRecords",
-        "outputs": [
-            {
-                "internalType": "contract MedicalRecords",
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    }
-] as const;
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "initialSupply",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "clinicalTrials",
+		"outputs": [
+			{
+				"internalType": "contract ClinicalTrials",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "healthToken",
+		"outputs": [
+			{
+				"internalType": "contract HealthToken",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "marketplace",
+		"outputs": [
+			{
+				"internalType": "contract Marketplace",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "medicalRecords",
+		"outputs": [
+			{
+				"internalType": "contract MedicalRecords",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
+        as const;
 
 let provider: ethers.BrowserProvider | undefined;
 let contract: ethers.Contract | undefined;
