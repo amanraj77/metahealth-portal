@@ -9,8 +9,8 @@ interface CombinedContract {
 }
 
 // Replace with your contract address and ABI
-const contractAddress = "0xE5f2A565Ee0Aa9836B4c80a07C8b32aAd7978e22";
-const abi = [
+const contractAddress = "0x838F9b8228a5C95a7c431bcDAb58E289f5D2A4DC";
+const abi =[
 	{
 		"inputs": [
 			{
